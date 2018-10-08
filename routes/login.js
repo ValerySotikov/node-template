@@ -6,8 +6,12 @@ const router = express.Router();
 //     res.status(200).send('Rendered');
 // });
 
-router.get('/', (req, res) => {
+router.get('/*', (req, res) => {
+
+    console.log(req.url);
     console.log(req.query);
+    console.log(req.body);
+
     switch(req.query.form) {
         case "signup":
             console.log("SIGNING UP");
