@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Krub|Ubuntu');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: #5d6567;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  border-bottom: .2em solid #34a936;
+}
+
+.title-img {
+  padding: .5em;
+}
+
+.login-btn,
+.reg-btn {
+  margin: auto;
+  font-size: 1.2em;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.login-btn:hover,
+.reg-btn:hover {
+  color: #00bbe2;
+}
+
+.login-btn {
+  grid-column: 9;
+}
+
+.reg-btn {
+  grid-column: 10;
+}
+
+main {
+  background-image: url(./assets/bg.png);
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+
+.sign-form,
+.login-form {
+  display: grid;
+  height: 25%;
+  background-color: #efefef;
+  box-shadow: 3px 3px 2px #a6a6a6;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  border-radius: 1em;
+  position: absolute;
+  padding: .5em;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+}
+
+.sign-form {
+  height: 35%;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.form-title {
+  margin: auto;
+  font-size: 1.25em;
+  grid-column: 1/2;
+  color: #00809f;
+}
+
+.close-btn {
+  max-width: .8em;
+  max-height: .8em;
+  position: absolute;
+  top: .6em;
+  right: .6em;
+  transition: .7s;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  transform: rotate(-180deg);
+  transition: .3s;
+}
+
+.login-label,
+.password-label,
+.passconf-label {
+  margin: auto;
+  margin-left: 1.4em;
+  font-size: 1.2em;
+}
+
+.login-label {
+  grid-area: 2/1;
+}
+
+.password-label {
+  grid-area: 3/1;
+}
+
+.login-input,
+.password-input,
+.passconf-input {
+  border-radius: 2em;
+  height: 2.5em;
+  width: 10em;
+  outline: none;
+  border: .05em solid #888888;
+  margin: auto;
+  margin-right: 1.4em;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+.login-input {
+  grid-area: 2/2;
+}
+
+.password-input {
+  grid-area: 3/2;
+}
+
+.passconf-label {
+  grid-area: 4/1;
+}
+
+.passconf-input {
+  grid-area: 4/2;
+}
+
+.submit-login-btn,
+.submit-auth-btn {
+  margin: auto;
+  margin-right: 1em;
+  padding: .4em .8em .4em .8em;
+  background-color: #34a936;
+  border: none;
+  border-radius: 1em;
+  color: white;
+  outline: none;
+  font-size: 1.2em;
+  transition: .1s;
+  cursor: pointer;
+}
+
+.submit-login-btn {
+  grid-area: 4/2;
+}
+
+.submit-auth-btn {
+  grid-area: 5/2;
+}
+
+.submit-login-btn:active,
+.submit-auth-btn:active {
+  background-color: #00753c;
+  color: #cccccc;
+  transition: .07s;
+}
+

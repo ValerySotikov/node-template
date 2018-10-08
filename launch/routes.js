@@ -1,5 +1,5 @@
 const express = require('express');
-const login = require('./routes/login');
+const login = require('../routes/login');
 
 module.exports = app => {
   app.use(express.json());
